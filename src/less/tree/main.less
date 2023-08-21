@@ -1,0 +1,99 @@
+@import url('./variables.less');
+
+.level2 {
+    .pos-absolute();
+    .flex();
+    .flex-center();
+    left: 100%;
+    width: @level2-w;
+    height: @level2-h;
+    background-color: @level2-bg;
+    border-radius: @level2-radius;
+    border: @level2-border;
+    color: @level2-color;
+}
+
+.level2-line-h {
+    .pos-relative();
+    .flex();
+    .flex-center();
+    width: 80px;
+    height: @line-weight;
+    background-color: @line-color;
+}
+
+.level2-out-right {
+    .auto-w-h();
+    .flex();
+    .flex-column();
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.level2-out-side {
+    height: 100%;
+    width: @line-weight;
+    background-color: @line-color;
+}
+
+.level2-out {
+    .flex();
+    .pos-absolute();
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+}
+
+.dir-h {
+    .flex();
+    .flex-center();
+    width: @line-h-w;
+    height: @line-weight;
+    background-color: @line-color;
+    left: 100%;
+    top: 50%;
+}
+.dir-v {
+    height: @line-v-h;
+    width: @line-weight;
+    background-color: @line-color;
+    left: 50%;
+    top: 100%;
+}
+
+.root {
+    width: @level1-w;
+    height: @level1-h;
+    background-color: @level1-bg;
+    border-radius: @level1-radius;
+    border: @level1-border;
+    color: @level1-color;
+}
+
+
+
+
+// utils
+.pos-relative {
+    position: relative;
+}
+.pos-absolute {
+    position: absolute;
+}
+
+.flex {
+    display: flex;
+}
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.auto-w-h {
+    width: 100%;
+    height: 100%;
+}
